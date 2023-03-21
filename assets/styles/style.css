@@ -1,0 +1,227 @@
+@import url(./variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+body {
+    font-family: var(--fontMontserrat) !important;
+}
+
+.home {
+    background-color: var(--primaryColor) !important;
+}
+
+.textPrimary {
+    color: var(--primaryColor) !important;
+}
+
+.textSecondary {
+    color: var(--secondaryColor) !important;
+}
+
+.textTerciary {
+    color: var(--terciaryColor) !important;
+}
+
+.fontPoppins{
+    font-family: var(--fontPoppins) !important;
+}
+
+.video {
+    box-shadow: 0 0 20px var(--terciaryColor);
+}
+
+.video iframe {
+    min-height: 450px;
+}
+
+.cta {
+    background-color: var(--terciaryColor);
+    transition: all 500ms ease;
+}
+
+.cta:hover {
+    transform: scale(1.1);
+}
+
+.students,
+.modules,
+.bonus,
+.aboutTeacher,
+.checkout .minutes,
+.checkout .seconds {
+    background-color: var(--terciaryColor);
+}
+
+.students .peoples img {
+    width: 18%;
+    transition: all 200ms ease;
+}
+
+.students .peoples img:hover {
+    transform: scale(1.05) rotate(3deg);
+    box-shadow: 0 0 5px #00000073;
+}
+
+.vantages .title {
+    width: 55%;
+}
+
+.vantages .technics,
+.vantages .classes,
+.vantages .market {
+    width: 30%;
+    background-color: var(--terciaryColor);
+    transition: all 500ms ease;
+}
+
+.vantages .technics:hover,
+.vantages .classes:hover,
+.vantages .market:hover {
+    transform: translateY(-10%);
+    box-shadow: 0 0 10px #00000025;
+}
+
+.vantages p {
+    font-size: 0.8rem !important;
+}
+
+.vantages svg {
+    width: 15%;
+}
+
+.vantages svg path {
+    fill: var(--faqColor);
+}
+
+.modules .row ul {
+    list-style: none;
+    width: fit-content;
+}
+
+.modules .modulesItem,
+.checkout {
+    background-color: var(--primaryColor);
+}
+
+.class1,
+.class2 {
+    box-shadow: 0 0 10px var(--primaryColor);
+}
+
+.bonus .container .col img {
+    width: 20%; 
+    border-radius: 50%;
+    top: -23%;
+    transform: translateY(50%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bonus .container .col {
+    padding: 5rem 2rem 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.checkout .textContent h2 {
+    font-size: 3rem;
+    margin-top: -20px;
+}
+
+.checkout .textContent img {
+    width: 40%;
+}
+
+.cta.secondary,
+.footer {
+    background-color: var(--secondaryColor);
+}
+
+@media(max-width: 768px) {
+
+    .container {
+        padding: 0 !important;
+    }
+
+    .home .video {
+        width: 100% !important;
+    }
+
+    .bonus .cta,
+    .checkout .cta {
+        width: 100% !important;
+    }
+
+    .video iframe {
+        min-height: 200px;
+    }
+
+    .home .prices img,
+    .certificate .certificatePhoto img {
+        width: 100%;
+    }
+
+    .home .headline h1 {
+        font-size: 1.2rem !important;
+    }
+
+    .aboutOfCourse .container,
+    .guarantee .container {
+        flex-direction: column-reverse;
+    }
+
+    .vantages .container,
+    .freeClasses .container,
+    .students .peoples,
+    .aboutTeacher .container,
+    .testimony .gallery  {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .certificate .title p {
+        width: 100% !important;
+    }
+
+    .students .peoples img,
+    .testimony .gallery img {
+        width: 100% !important;
+    }
+
+    .vantages .technics, 
+    .vantages .classes, 
+    .vantages .market,
+    .aboutOfCourse .textContent, .aboutOfCourse .image {
+        width: 100% !important;
+    }
+
+    .vantages .title {
+        width: 100%;
+    }
+
+    .bonus .container .col img {
+        top: -10%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+
+    .aboutOfCourse .image img,
+    .guarantee .image img {
+        width: 75% !important;
+    }
+
+    .video iframe {
+        min-height: 340px;
+    }
+
+    .testimony .gallery,
+    .students .peoples {
+        display: grid !important;
+        grid-template-columns: auto auto;
+    }
+}
